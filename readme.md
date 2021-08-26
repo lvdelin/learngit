@@ -5,6 +5,10 @@ Git tracks changes of files.
 
 # 一、时光机穿梭
 
+```
+$ git status
+```
+
 git status命令看看结果
 
 ```
@@ -66,6 +70,12 @@ Git的版本库里存了很多东西，其中最重要的就是称为stage（或
 还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。
 
 ## 4、管理修改
+
+Git管理的是修改，而不是文件。
+
+用`git diff HEAD -- readme.txt`命令可以查看工作区和版本库里面最新版本的区别。
+
+每次修改，如果不用`git add`到暂存区，那就不会加入到`commit`中。
 
 ## 5、撤销修改
 
